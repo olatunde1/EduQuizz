@@ -17,7 +17,7 @@ function App() {
         <Box textAlign="center" mt={5}>
         <Switch>
           <Route exact path='/'>
-           <Typography variant='h2' fontWeight='bold'>Quiz App</Typography>
+           <Typography variant='h2' color='blue' fontWeight='bold'>Eduquiz App</Typography>
             <Settings />
           </Route>
           <Route path='/questions'>

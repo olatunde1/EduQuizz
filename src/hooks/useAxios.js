@@ -6,7 +6,7 @@ axios.defaults.baseURL = "https://opentdb.com/"
 
 const useAxios = ({url}) => {
   const [response,setResponse] = useState(null);
-  const [error, setError] = usestate('');
+  const [error, setError] = useState('');
   const [loading, setLoading]= useState(true);
 
 

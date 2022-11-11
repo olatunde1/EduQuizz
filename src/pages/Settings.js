@@ -1,12 +1,33 @@
-import React from 'react'
+
 import SelectFields from './../components/SelectFields'
 import { Box } from '@mui/system'
-import {Button} from '@mui/material';
+import {Button, CircularProgress, Typography} from '@mui/material';
 import TextFieldComp from './../components/TextFieldComp';
+import useAxios from './../hooks/useAxios';
 
 
 
 const Settings = () => {
+  const { response,error,loading } = useAxios({url:'/api_category.php'});
+
+  if(loading){
+    return(
+      <Box mt={20}>
+        <CircularProgress />
+      </Box>
+    )
+  }
+
+  if(error){
+    return(
+      <Typography>
+        Something Went Wrong!
+      </Typography>
+    )
+  }
+
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
   }
