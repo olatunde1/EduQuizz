@@ -3,18 +3,20 @@ import { Box } from '@mui/system';
 import { FormControl, InputLabel,MenuItem,Select } from '@mui/material';
 
 const SelectFields = props => {
-    const {label} = props;
+    const {label,options} = props;
     const [value, setValue] =useState('')
 
-    const handleChange = ()=> {}
+    const handleChange = (e)=> {
+        setValue(e.target.value);
+    }
   return (
     <Box mt={3} width='100%'>
         <FormControl fullWidth size='small'>
             <InputLabel>{label}</InputLabel>
             <Select value={value} label={label} onChange={handleChange}>
-                <MenuItem>Option 1</MenuItem>
-                <MenuItem>Option 2</MenuItem>
-                <MenuItem>Option 3</MenuItem>
+                {options.map(({ id,name }) => (
+                    <MenuItem value={id} key={id}>{name}</MenuItem>
+                ))}
             </Select>
         </FormControl>
     </Box>

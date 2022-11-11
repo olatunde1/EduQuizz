@@ -20,22 +20,32 @@ const Settings = () => {
 
   if(error){
     return(
-      <Typography>
+      <Typography variant='h6' mt={20} color='red'>
         Something Went Wrong!
       </Typography>
     )
   }
 
+  const difficultyOptions = [
+    { id: 'easy', name: 'Easy'},
+    { id: 'medium', name: 'Medium'},
+    { id: 'hard', name: 'Hard'},
+  ]
 
+
+  const typeOptions = [
+    { id: 'multiple', name: 'Multiple Choice'},
+    { id: 'boolean', name: 'True/False'},
+  ]
 
   const handleSubmit = (e) => {
     e.preventDefault();
   }
   return (
    <form onSubmit={handleSubmit}>
-    <SelectFields label='Category' />
-    <SelectFields label='Difficulty' />
-    <SelectFields label='Type' />
+    <SelectFields options={response.trivia_categories} label='Category' />
+    <SelectFields options = {difficultyOptions} label='Difficulty' />
+    <SelectFields options = {typeOptions} label='Type' />
     <TextFieldComp />
     <Box mt={3} width='100%'>
       <Button fullWidth variant='contained' type='submit'>Get Started</Button>
