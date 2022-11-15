@@ -16,11 +16,16 @@ function App() {
       <Container maxWidth="sm">
         <Box textAlign="center" mt={5}>
         <Switch>
-          <Route path='/' exact >
-           <Typography variant='h2' color='blue' fontWeight='bold'>Eduquiz App</Typography>
+          <Route exact path='/' >
+           <Typography variant='h2' color='white' fontWeight='bold' bgcolor='blue' marginTop='8%' padding>Eduquiz App</Typography>
+          <Box display='grid' justifyItems='start' marginTop='16px' padding>
+            <Typography variant='p' color='gray' fontWeight='bold' padding >Ezechukwu Grace</Typography>
+            <Typography variant='p' color='gray' fontWeight='bold' padding >SS3 Blue</Typography>
+            <Typography variant='p' color='gray' fontWeight='bold' padding>Age: 18yrs</Typography>
+          </Box>
             <Settings />
           </Route>
-          <Route path='/questions'>
+          <Route path="/questions">
             <Questions />
           </Route>
           <Route path='/score'>
