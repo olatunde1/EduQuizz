@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,7 +16,7 @@ function App() {
       <Container maxWidth="sm">
         <Box textAlign="center" mt={5}>
         <Switch>
-          <Route exact path='/'>
+          <Route path='/' exact >
            <Typography variant='h2' color='blue' fontWeight='bold'>Eduquiz App</Typography>
             <Settings />
           </Route>
