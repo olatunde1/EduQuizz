@@ -84,6 +84,7 @@ const Questions = () => {
             {decode(data)}
           </Button>
         </Box>
+      
       ))}
       <Box mt={5}>
         Score: {score} / {response.results.length}

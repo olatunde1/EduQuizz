@@ -13,6 +13,7 @@ const Settings = () => {
     return (
       <Box mt={20}>
         <CircularProgress />
+        <Typography>You're Welcome!!</Typography>
       </Box>
     );
   }
@@ -48,10 +49,11 @@ const Settings = () => {
       <SelectField options={typeOptions} label="Type" />
       <TextFieldComp />
       <Box mt={3} width="100%">
-        <Button fullWidth variant="contained" type="submit">
+        <Button fullWidth variant="contained" hover='contained' type="submit" marginBottom='24px' >
           Get Started
         </Button>
       </Box>
+      
     </form>
   );
 };

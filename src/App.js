@@ -17,7 +17,7 @@ function App() {
         <Box textAlign="center" mt={5}>
         <Switch>
           <Route exact path='/' >
-           <Typography variant='h2' color='white' fontWeight='bold' bgcolor='blue' marginTop='8%' padding>Eduquiz App</Typography>
+           <Typography variant='h2' color='white' fontWeight='bold' bgcolor='blue' marginTop='10%' padding>Eduquiz App</Typography>
           <Box display='grid' justifyItems='start' marginTop='16px' padding>
             <Typography variant='p' color='gray' fontWeight='bold' padding >Ezechukwu Grace</Typography>
             <Typography variant='p' color='gray' fontWeight='bold' padding >SS3 Blue</Typography>
