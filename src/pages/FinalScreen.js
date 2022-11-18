@@ -1,4 +1,3 @@
-
 import { Button, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { useDispatch } from "react-redux";
@@ -23,7 +22,7 @@ const FinalScreen = () => {
         Your Final Score is: {score}
       </Typography>
       <Button onClick={handleBackToSettings} variant="outlined">
-        back to settings!
+        Home!
       </Button>
     </Box>
   );

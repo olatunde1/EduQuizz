@@ -17,11 +17,11 @@ function App() {
         <Box textAlign="center" mt={5}>
         <Switch>
           <Route exact path='/' >
-           <Typography variant='h2' color='white' fontWeight='bold' bgcolor='blue' marginTop='10%' padding>Eduquiz App</Typography>
+           <Typography variant='h4' color='white' fontWeight='bold' bgcolor='blue' marginTop='10%' padding>Elementary School Students Info</Typography>
           <Box display='grid' justifyItems='start' marginTop='16px' padding>
-            <Typography variant='p' color='gray' fontWeight='bold' padding >Ezechukwu Grace</Typography>
-            <Typography variant='p' color='gray' fontWeight='bold' padding >SS3 Blue</Typography>
-            <Typography variant='p' color='gray' fontWeight='bold' padding>Age: 18yrs</Typography>
+            <Typography variant='p' color='blue' fontWeight='bold' padding >Student Name: Ezechukwu Grace</Typography>
+            <Typography variant='p' color='blue' fontWeight='bold' padding >Class: SS3 Blue</Typography>
+            <Typography variant='p' color='blue' fontWeight='bold' padding>Age: 18yrs</Typography>
           </Box>
             <Settings />
           </Route>

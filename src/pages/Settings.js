@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import TextFieldComp from "../components/TextFieldComp";
 import useAxios from "../hooks/useAxios";
 import SelectField from './../components/SelectFields';
+import 'boxicons';
 
 const Settings = () => {
   const { response, error, loading } = useAxios({ url: "/api_category.php" });
@@ -50,7 +51,7 @@ const Settings = () => {
       <TextFieldComp />
       <Box mt={3} width="100%">
         <Button fullWidth variant="contained" hover='contained' type="submit" marginBottom='24px' >
-          Get Started
+          Get Started<box-icon color='white' name='right-arrow-circle'></box-icon>
         </Button>
       </Box>
       
